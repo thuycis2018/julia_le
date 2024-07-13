@@ -15,3 +15,13 @@ Install Leaflet to work with map
 npm install @types/leaflet leaflet react-leaflet
 ```
 
+Install plotly  to work with charts
+```sh
+npm install react-plotly.js plotly.js
+```
+
+
+Install react-router-dom
+```sh
+npm install react-router-dom
+```
