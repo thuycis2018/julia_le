@@ -1,5 +1,5 @@
 
-import React, { Fragment, FormEvent } from 'react';
+import { Fragment, FormEvent } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import type { RootState, AppDispatch } from '../../app/store';
 import { fetchPlaces, setTerm } from './locationSearchSlice';
@@ -9,7 +9,7 @@ interface LocationSearchProps {
   onPlaceClick: (place: Place) => void;
 }
 
-const LocationSearch: React.FC<LocationSearchProps> = ({ onPlaceClick }) => {
+export default function LocationSearch({ onPlaceClick }: LocationSearchProps){
   const dispatch = useDispatch<AppDispatch>();
   const { places, term } = useSelector((state: RootState) => state.locationSearch);
 
@@ -48,6 +48,4 @@ const LocationSearch: React.FC<LocationSearchProps> = ({ onPlaceClick }) => {
       </div>
     </div>
   );
-};
-
-export default LocationSearch;
+}
