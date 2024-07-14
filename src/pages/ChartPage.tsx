@@ -1,6 +1,6 @@
 
-import StockComparisonChart from '../components/StockComparisonChart';
-import type { StockSymbol } from '../api/types/stockSymbols';
+import StockComparisonChart from '../components/stock/StockComparisonChart';
+import type { StockSymbol } from '../api/types/stockSymbol';
 
 export default function ChartPage() {
   const symbols: StockSymbol[] = ['GOOG', 'AMZN']; 

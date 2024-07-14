@@ -25,3 +25,9 @@ Install react-router-dom
 ```sh
 npm install react-router-dom
 ```
+
+
+Install Redux
+```sh
+npm install @reduxjs/toolkit react-redux
+```

@@ -1,8 +1,8 @@
 
 import { useState } from 'react';
 import type { Place } from '../api/types/place';
-import Map from '../components/Map';
-import LocationSearch from '../components/LocationSearch';
+import Map from '../components/map/Map';
+import LocationSearch from '../components/map/LocationSearch';
 
 function MapPage() {
   const [place, setPlace] = useState< Place | null>(null)

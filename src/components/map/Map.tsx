@@ -1,11 +1,11 @@
 import 'leaflet/dist/leaflet.css';
-import type { Place } from '../api/types/place';
+import type { Place } from '../../api/types/place';
 import { Map as LeafletMap } from 'leaflet';
 import { useEffect, useRef } from 'react';
 import { MapContainer, TileLayer, Marker } from 'react-leaflet';
 import L from 'leaflet';
-import greenMarker from '../assets/marker-icon-2x-green.png';
-import markerShadow from '../assets/marker-shadow.png';
+import greenMarker from '../../assets/marker-icon-2x-green.png';
+import markerShadow from '../../assets/marker-shadow.png';
 
 interface MapProps {
     place: Place | null;

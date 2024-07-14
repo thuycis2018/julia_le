@@ -4,7 +4,6 @@ import Root from "./pages/Root";
 import HomePage from "./pages/HomePage";
 import MapPage from './pages/MapPage';
 import ChartPage from "./pages/ChartPage";
-import ProductDetailsPage from "./pages/ProductDetailsPage";
 
 const router = createBrowserRouter([
   {
@@ -22,10 +21,6 @@ const router = createBrowserRouter([
       {
         path: "/charts",
         element: <ChartPage />
-      },
-      {
-        path: 'products/:id',
-        element: <ProductDetailsPage />
       }
     ]
   }
