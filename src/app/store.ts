@@ -1,9 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit';
 import stockReducer from '../components/stock/stockSlice';
+import locationSearchReducer from '../components/map/locationSearchSlice';
 
 const store = configureStore({
   reducer: {
     stock: stockReducer,
+    locationSearch: locationSearchReducer,
   },
 });
 
