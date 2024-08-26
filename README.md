@@ -8,3 +8,15 @@ Install dependencies:
 ```sh
 npm install
 ```
+
+
+Build:
+```sh
+npm run build
+```
+
+
+Run dev:
+```sh
+npm run dev
+```
