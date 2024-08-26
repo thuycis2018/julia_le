@@ -16,8 +16,9 @@ const options = {
 
 const WCloud: React.FC = () => {
   const wordCloudStyle: React.CSSProperties = {
-    width: '900px',
-    height: '900px',
+    width: '90%',
+    height: 'auto',
+    maxWidth: '600px',
     border: '1px solid #666',
     margin: 'auto'
   };

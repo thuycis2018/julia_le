@@ -34,10 +34,10 @@ function StockComparisonChart({ symbols, chartType }: StockComparisonChartProps)
     marker: { color: getRandomColor() },
   }));
 
-
   const chartStyle: React.CSSProperties = {
-    width: '900px',
-    height: '600px',
+    width: '90vw', // Use viewport width to control size responsively
+    height: 'auto',
+    maxWidth: '600px', // Ensure it doesn’t get too wide on larger screens
     border: '1px solid #666',
     margin: 'auto',
     marginBottom: '20px',
@@ -63,7 +63,12 @@ function StockComparisonChart({ symbols, chartType }: StockComparisonChartProps)
           yaxis: {
             title: 'Stock Price (USD)',
           },
+          autosize: true,
+          responsive: true,
+          margin: { t: 40, l: 40, r: 20, b: 40 },
         }}
+        useResizeHandler
+        style={{ width: '100%', height: '100%' }}
       />
     </div>
   );
