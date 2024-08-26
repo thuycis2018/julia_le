@@ -34,8 +34,25 @@ function StockComparisonChart({ symbols, chartType }: StockComparisonChartProps)
     marker: { color: getRandomColor() },
   }));
 
+
+  const chartStyle: React.CSSProperties = {
+    width: '900px',
+    height: '600px',
+    border: '1px solid #666',
+    margin: 'auto',
+    marginBottom: '20px',
+    marginTop: '20px',
+  };
+
+  const h2Style: React.CSSProperties = {
+    padding: '10px',
+    textAlign: 'center',
+    fontWeight: 'bold',
+  };
+
   return (
-    <div>
+    <div style={chartStyle}>
+      <h2 style={h2Style}>Project: Using react-plotly.js to create this chart</h2>
       <Plot
         data={plotData}
         layout={{

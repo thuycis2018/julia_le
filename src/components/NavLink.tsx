@@ -8,7 +8,7 @@ interface NavLinkProps {
 
 export default function NavLink ({ to, children }: NavLinkProps) {
   return (
-    <Link to={to} className="border rounded outline p-2 m-2 text-lg font-bold hover:bg-white">
+    <Link to={to} className="px-4 py-2 hover:bg-grey-300">
       {children}
     </Link>
   );

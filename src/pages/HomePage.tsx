@@ -1,13 +1,13 @@
-
-import StockComparisonChart from '../components/stock/StockComparisonChart';
-import type { StockSymbol } from '../api/types/stockSymbol';
+import AboutSection from '../components/AboutSection';
+import SkillSection from '../components/SkillSection';
+import Footer from '../components/Footer';
 
 export default function HomePage() {
-  const symbols: StockSymbol[] = ['AAPL', 'MSFT', 'GOOG']; 
-  const chartType = 'bar';
   return (
     <div>
-      <StockComparisonChart symbols={symbols} chartType={chartType} />
-    </div>
+      <AboutSection />
+      <SkillSection />
+      <Footer />
+    </div>   
   );
 }
