@@ -2,6 +2,8 @@ import React from "react";
 import WordCloud from "react-wordcloud";
 import { Word } from "../api/types/word";
 import { generateWordCloudData} from "./GenerateWordCloud";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLaptopCode } from '@fortawesome/free-solid-svg-icons';
 import {TEXT} from "./constants";
 
 const text = TEXT;
@@ -31,7 +33,7 @@ const h2Style: React.CSSProperties = {
 
   return (
     <div style={wordCloudStyle}>
-      <h2 style={h2Style}>Project: Using react-wordcloud to generate Word Cloud from provided text</h2>
+      <h2 style={h2Style}><FontAwesomeIcon icon={faLaptopCode} className="mr-2" /> Using react-wordcloud to generate Word Cloud from provided text</h2>
       <WordCloud words={words} options={options} />
     </div>
   );

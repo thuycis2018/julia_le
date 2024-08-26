@@ -5,4 +5,4 @@ export default function Footer() {
             <p>&copy; {currentYear} Julia Le. All rights reserved.</p>
         </footer>
     );
-  }
+}

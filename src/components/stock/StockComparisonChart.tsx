@@ -4,6 +4,8 @@ import { Data } from 'plotly.js';
 import { useAppDispatch, useAppSelector } from '../../app/hooks';
 import { fetchStockData, selectStockData, selectLoading } from './stockSlice';
 import { StockSymbol } from '../../api/types/stockSymbol';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLaptopCode } from '@fortawesome/free-solid-svg-icons';
 
 interface StockComparisonChartProps {
   symbols: StockSymbol[];
@@ -42,6 +44,7 @@ function StockComparisonChart({ symbols, chartType }: StockComparisonChartProps)
     margin: 'auto',
     marginBottom: '20px',
     marginTop: '20px',
+    padding: '10px',
   };
 
   const h2Style: React.CSSProperties = {
@@ -52,7 +55,7 @@ function StockComparisonChart({ symbols, chartType }: StockComparisonChartProps)
 
   return (
     <div style={chartStyle}>
-      <h2 style={h2Style}>Project: Using react-plotly.js to create this chart</h2>
+      <h2 style={h2Style}><FontAwesomeIcon icon={faLaptopCode} className="mr-2" /> Using react-plotly.js to create this chart</h2>
       <Plot
         data={plotData}
         layout={{
