@@ -42,7 +42,6 @@ const GitHubSearch: React.FC<SearchProps> = ({ query, first }) => {
 
   return (
         <div>
-            {/* <h1 className="text-2xl font-bold mb-4 text-center">Search Results</h1> */}
             <ul className="space-y-4">
                 {data?.search.edges.map((edge, index) => (
                 <li key={index} className="items-start p-4 bg-gray-50 border border-gray-200 rounded-lg shadow-sm"

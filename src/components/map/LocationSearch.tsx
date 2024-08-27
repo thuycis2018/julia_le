@@ -3,7 +3,7 @@ import { Fragment, FormEvent } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import type { RootState, AppDispatch } from '../../app/store';
 import { fetchPlaces, setTerm } from './locationSearchSlice';
-import { Place} from '../../api/types/place';
+import { Place} from '../../api/types';
 
 interface LocationSearchProps {
   onPlaceClick: (place: Place) => void;

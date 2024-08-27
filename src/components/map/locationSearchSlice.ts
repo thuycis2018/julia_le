@@ -1,6 +1,6 @@
 // src/store/locationSearchSlice.ts
 import { createSlice, createAsyncThunk, PayloadAction } from '@reduxjs/toolkit';
-import type { Place } from '../../api/types/place';
+import type { Place } from '../../api/types';
 import { search } from '../../api/queries/search';
 
 export interface LocationSearchState {
