@@ -1,4 +1,4 @@
-import type { Place } from '../types/place';
+import type { Place } from '../types';
 interface SearchResponse{
     features:{
         geometry: {

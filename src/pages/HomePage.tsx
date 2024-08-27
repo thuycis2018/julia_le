@@ -4,21 +4,10 @@ import WCloud from '../components/WordCloud';
 import Footer from '../components/Footer';
 
 export default function HomePage() {
-  const wordCloudStyle: React.CSSProperties = {
-    width: '90%',
-    height: 'auto',
-    maxWidth: '1500px',
-    border: '1px solid #d3ded3',
-    borderRadius: '8px',
-    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
-    margin: 'auto',
-    padding: '16px',
-  };
-
   return (
     <div>
       <AboutSection />
-      <div style={wordCloudStyle}>
+      <div className="w-full max-w-[1510px] p-6 bg-white rounded-2xl border border-gray-200 shadow-lg mx-auto hover:shadow-2xl transition-shadow duration-300">
         <WCloud />
       </div>
       <SkillSection />

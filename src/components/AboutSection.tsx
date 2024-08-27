@@ -7,7 +7,7 @@ export default function AboutSection() {
 
     return (
         <div className="container mx-auto my-8 p-4 grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="rounded-lg overflow-hidden shadow-md hover:shadow-2xl transition-shadow duration-300">
+            <div className="rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
                 <div className="bg-gray-200 p-4">
                 <h3 className="text-lg font-bold"><FontAwesomeIcon icon={faBolt} className="mr-2" />About Me</h3>
                 </div>
@@ -27,7 +27,7 @@ export default function AboutSection() {
                         </div>
                     </div>
             </div>         
-            <div className="rounded-lg overflow-hidden shadow-md hover:shadow-2xl transition-shadow duration-300">
+            <div className="rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
                 <div className="bg-gray-200 p-4">
                 <h3 className="text-lg font-bold"><FontAwesomeIcon icon={faCircleUser} className="mr-2" />Turn Vision into Reality</h3>
                 </div>

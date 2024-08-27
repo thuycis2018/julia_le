@@ -1,6 +1,6 @@
 import React from "react";
 import WordCloud from "react-wordcloud";
-import { Word } from "../api/types/word";
+import { Word } from "../api/types";
 import { generateWordCloudData} from "./GenerateWordCloud";
 import {TEXT} from "./constants";
 

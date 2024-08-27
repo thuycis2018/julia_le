@@ -1,6 +1,6 @@
 import { createSlice, createAsyncThunk, PayloadAction } from '@reduxjs/toolkit';
 import { RootState } from '../../app/store';
-import { StockSymbol, StockData } from '../../api/types/stockSymbol';
+import { StockSymbol, StockData } from '../../api/types';
 
 const mockStockData: { [key in StockSymbol]: StockData } = {
   AAPL: {

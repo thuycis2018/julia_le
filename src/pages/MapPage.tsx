@@ -1,6 +1,6 @@
 
 import { useState } from 'react';
-import type { Place } from '../api/types/place';
+import type { Place } from '../api/types';
 import Map from '../components/map/Map';
 import LocationSearch from '../components/map/LocationSearch';
 

@@ -3,7 +3,7 @@ import Plot from 'react-plotly.js';
 import { Data } from 'plotly.js';
 import { useAppDispatch, useAppSelector } from '../../app/hooks';
 import { fetchStockData, selectStockData, selectLoading } from './stockSlice';
-import { StockSymbol } from '../../api/types/stockSymbol';
+import { StockSymbol } from '../../api/types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLaptopCode } from '@fortawesome/free-solid-svg-icons';
 
@@ -36,26 +36,9 @@ function StockComparisonChart({ symbols, chartType }: StockComparisonChartProps)
     marker: { color: getRandomColor() },
   }));
 
-  const chartStyle: React.CSSProperties = {
-    width: '90vw', // Use viewport width to control size responsively
-    height: 'auto',
-    maxWidth: '600px', // Ensure it doesn’t get too wide on larger screens
-    border: '1px solid #666',
-    margin: 'auto',
-    marginBottom: '20px',
-    marginTop: '20px',
-    padding: '10px',
-  };
-
-  const h2Style: React.CSSProperties = {
-    padding: '10px',
-    textAlign: 'center',
-    fontWeight: 'bold',
-  };
-
   return (
-    <div style={chartStyle}>
-      <h2 style={h2Style}><FontAwesomeIcon icon={faLaptopCode} className="mr-2" /> Using react-plotly.js to create this chart</h2>
+    <div className="w-full max-w-3xl p-6 mb-6 bg-white rounded-2xl border border-gray-200 shadow-lg mx-auto hover:shadow-2xl transition-shadow duration-300">
+      <h2 className="font-bold p-6 text-center"><FontAwesomeIcon icon={faLaptopCode} className="mr-2" /> Using react-plotly.js to create this chart</h2>
       <Plot
         data={plotData}
         layout={{
