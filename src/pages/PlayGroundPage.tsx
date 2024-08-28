@@ -11,7 +11,7 @@ const PlayGroundPage: React.FC = () => {
   const symbols: StockSymbol[] = ['GOOG', 'AMZN']; 
   const chartType = 'scatter';
   const tabs = [
-    { label: 'AWS Lambda & GraphQL', content: <GitHubSection /> },
+    // { label: 'AWS Lambda', content: <GitHubSection /> },
     { label: 'TypeScript', content: <PlayGroundSection /> },
     { label: 'Word Cloud', content: <WordCloud /> },
     { label: 'Chart', content: <StockComparisonChart symbols={symbols} chartType={chartType} /> },
@@ -37,6 +37,7 @@ const PlayGroundPage: React.FC = () => {
                       : ''
                   }`}
                   onClick={() => setActiveTab(index)}
+                  style={{ minHeight: '4.5rem' }}
                 >
                   {tab.label}
                 </button>
