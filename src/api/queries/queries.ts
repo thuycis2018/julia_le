@@ -1,9 +1,8 @@
-// src/queries.ts
 import { gql } from '@apollo/client';
 
 export const GET_BUSINESSES = gql`
-  query {
-    search(term: "restaurant", location: "New York City", categories: ["restaurants"], price: ["$$"], limit: 5) {
+  query GetBusinesses ($location: String!, $term: String) {
+    search(term: $term, location: $location, limit: 10) {
       business {
         name
         rating
@@ -11,10 +10,8 @@ export const GET_BUSINESSES = gql`
           address1
           city
           state
-          zip_code
         }
         phone
-        website
         review_count
         hours {
           open {

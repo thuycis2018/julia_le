@@ -1,17 +1,19 @@
 import React, { useState } from 'react';
 import GitHubSection from '../components/GitHubSection';
+import YelpBusinessList from '../components/YelpBusinessList';
 import PlayGroundSection from '../components/PlayGroundSection';
 import WordCloud from '../components/WordCloud';
-import Footer from '../components/Footer';
 import StockComparisonChart from '../components/stock/StockComparisonChart';
 import type { StockSymbol } from '../api/types';
+import Footer from '../components/Footer';
 
 const PlayGroundPage: React.FC = () => {
   const [activeTab, setActiveTab] = useState(0);
   const symbols: StockSymbol[] = ['GOOG', 'AMZN']; 
   const chartType = 'scatter';
   const tabs = [
-    // { label: 'AWS Lambda', content: <GitHubSection /> },
+    { label: 'GraphQL', content: <YelpBusinessList location="San Diego" term="coffee"/> },
+    { label: 'AWS Lambda', content: <GitHubSection /> },
     { label: 'TypeScript', content: <PlayGroundSection /> },
     { label: 'Word Cloud', content: <WordCloud /> },
     { label: 'Chart', content: <StockComparisonChart symbols={symbols} chartType={chartType} /> },

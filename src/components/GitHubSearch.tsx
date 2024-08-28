@@ -47,7 +47,7 @@ const GitHubSearch: React.FC<SearchProps> = ({ query, first }) => {
                 <li key={index} className="items-start p-4 bg-gray-50 border border-gray-200 rounded-lg shadow-sm"
                 >
                     <h2 className="text-xl font-semibold mb-1">
-                    <a className="text-blue-600 hover:underline" href={edge.node.url} target="_blank" rel="noopener noreferrer">
+                    <a className="text-black font-bold text-xl hover:underline" href={edge.node.url} target="_blank" rel="noopener noreferrer">
                         {edge.node.name}
                     </a>
                     </h2>
