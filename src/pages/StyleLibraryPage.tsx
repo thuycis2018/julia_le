@@ -4,6 +4,7 @@ import Formv2 from '../components/blocks/Formv2';
 import MegaMenu from '../components/blocks/MegaMenu';
 import Table from '../components/blocks/Table';
 import PhotoSlideshow from '../components/blocks/PhotoSlideshow';
+import SkillBar from '../components/SkillBar';
 import Footer from '../components/Footer';
 import pic1 from '../assets/pic1.jpg';
 import pic2 from '../assets/pic2.jpg';
@@ -31,6 +32,7 @@ const StyleLibraryPage: React.FC = () => {
     <>
         <div className="w-full max-w-3xl p-6 mb-6 bg-white rounded-2xl border border-gray-200 mx-auto m-10 p-10 shadow-lg">
             <h2 className="font-bold p-4 text-center">Style Library</h2>
+            <SkillBar />
             <Tab />
             <Formv1 />
             <Formv2 />
