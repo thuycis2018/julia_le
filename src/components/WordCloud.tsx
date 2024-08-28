@@ -11,7 +11,7 @@ const words: Word[] = generateWordCloudData(text, excludeWords);
 const options = {
   rotations: 2,
   rotationAngles: [-90, 0] as [number, number],
-  fontSizes: [10, 60] as [number, number],
+  fontSizes: [18, 80] as [number, number],
 };
 
 const WCloud: React.FC = () => {

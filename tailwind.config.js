@@ -7,9 +7,11 @@ export default {
   theme: {
     extend: {
       colors: {
-        brown: {
-            500: 'gray',
-        }
+        green: {
+            1: '#15372c',
+            2: '#008561',
+            3: '#080561'
+        },
       },
     },
   },

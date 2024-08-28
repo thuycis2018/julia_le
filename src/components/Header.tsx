@@ -29,8 +29,8 @@ export default function Header() {
   };
 
   return (
-    <div className="font-sans bg-gray-100">
-      <nav className="bg-gray-500 text-white p-4 shadow-md">
+    <div className="font-sans bg-green-1">
+      <nav className="bg-green-1 text-white p-4 shadow-md">
         <div className="container mx-auto flex justify-between items-center">
           <a href="#" className="text-xl font-bold">
             <FontAwesomeIcon icon={faBolt} className="mr-2" /> Julia Le

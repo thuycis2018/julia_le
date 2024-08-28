@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLaptopCode } from '@fortawesome/free-solid-svg-icons';
-import GitHubSearch from './GitHubSearch'; // Assuming GitHubSearch is another component
+import GitHubSearch from './GitHubSearch';
 
 const GitHubSection: React.FC = () => {
   const [query, setQuery] = useState('');
   const [first, setFirst] = useState(10);
-  const [searchQuery, setSearchQuery] = useState(''); // Holds the query to be searched
+  const [searchQuery, setSearchQuery] = useState('');
 
   const handleSearch = () => {
     setSearchQuery(query);
@@ -34,7 +34,7 @@ const GitHubSection: React.FC = () => {
         />
         <button
           onClick={handleSearch}
-          className="px-2 py-2 bg-green-700 text-white rounded-lg shadow-md hover:bg-green-600"
+          className="px-4 py-2 bg-green-2 text-white rounded-lg shadow-md hover:bg-green-1"
         >
           Search
         </button>

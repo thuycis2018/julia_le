@@ -8,8 +8,8 @@ export default function AboutSection() {
     return (
         <div className="container mx-auto my-8 p-4 grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
-                <div className="bg-gray-200 p-4">
-                <h3 className="text-lg font-bold"><FontAwesomeIcon icon={faBolt} className="mr-2" />About Me</h3>
+                <div className="bg-green-2 p-4">
+                <h3 className="text-white text-lg font-bold"><FontAwesomeIcon icon={faBolt} className="mr-2" />About Me</h3>
                 </div>
                     <div className="flex flex-col md:flex-row items-center p-4">
                         <div className="md:flex-1 mb-4 md:mb-0 p-4">
@@ -28,8 +28,8 @@ export default function AboutSection() {
                     </div>
             </div>         
             <div className="rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
-                <div className="bg-gray-200 p-4">
-                <h3 className="text-lg font-bold"><FontAwesomeIcon icon={faCircleUser} className="mr-2" />Turn Vision into Reality</h3>
+                <div className="bg-green-2 p-4">
+                <h3 className="text-white text-lg font-bold"><FontAwesomeIcon icon={faCircleUser} className="mr-2" />Turn Vision into Reality</h3>
                 </div>
                 <div className="bg-white p-6">
                 <p>With years of experience in web development and system integration, I am known for pulling the right people together, staying focused, and getting things done. Have you been to meetings that people will talk about changes and wait for someone to make the changes happen? You can count on me to make them happen!</p>
