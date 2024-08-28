@@ -14,7 +14,7 @@ export default function AboutSection() {
                     <div className="flex flex-col md:flex-row items-center p-4">
                         <div className="md:flex-1 mb-4 md:mb-0 p-4">
                             <p>
-                            I am a web developer based in San Diego, with experience in full-stack web development, eCommerce, and system integration over {YEAR_WEB_DEV} years.
+                            I am a Software Engineer based in San Diego, with experience in full-stack web development, eCommerce, and system integration over {YEAR_WEB_DEV} years.
                             </p>
                         </div>
                         <div className="relative w-60 h-60">

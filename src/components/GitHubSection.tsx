@@ -20,7 +20,7 @@ const GitHubSection: React.FC = () => {
   };
 
   return (
-    <div className="w-full max-w-3xl p-6 mb-6 bg-white rounded-2xl border border-gray-200 shadow-lg mx-auto hover:shadow-2xl transition-shadow duration-300">
+    <div>
       <div className="py-5"><FontAwesomeIcon icon={faLaptopCode} className="mr-2" /> This feature uses React frontend (TypeScript and Apollo) sending GraphQL query to AWS API Gateway triggering AWS Lambda (Python) to call Github GraphQL endpoint passing API Token and return search result. API Token can be stored in AWS Secret Manager and then use AWS SDK to pull it in Lambda function.</div>
       
       <div className="flex items-center space-x-4 py-10">

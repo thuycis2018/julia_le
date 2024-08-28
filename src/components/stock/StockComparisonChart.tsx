@@ -37,7 +37,7 @@ function StockComparisonChart({ symbols, chartType }: StockComparisonChartProps)
   }));
 
   return (
-    <div className="w-full max-w-3xl p-6 mb-6 bg-white rounded-2xl border border-gray-200 shadow-lg mx-auto hover:shadow-2xl transition-shadow duration-300">
+    <div className="w-full max-w-3xl p-6 mb-6 bg-white rounded-2xl border border-gray-200 mx-auto">
       <h2 className="font-bold p-6 text-center"><FontAwesomeIcon icon={faLaptopCode} className="mr-2" /> Using react-plotly.js to create this chart</h2>
       <Plot
         data={plotData}

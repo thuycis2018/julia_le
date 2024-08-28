@@ -4,6 +4,7 @@ import Root from "./pages/Root";
 import HomePage from "./pages/HomePage";
 import TestimonialPage from "./pages/TestimonialPage";
 import PlayGroundPage from "./pages/PlayGroundPage";
+import StyleLibraryPage from "./pages/StyleLibraryPage";
 
 const router = createBrowserRouter([
   {
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
       {
         path: "/playgrounds",
         element: <PlayGroundPage />
+      },
+      {
+        path: "/styles",
+        element: <StyleLibraryPage />
       }
     ]
   }
