@@ -12,10 +12,10 @@ const PlayGroundPage: React.FC = () => {
   const symbols: StockSymbol[] = ['GOOG', 'AMZN']; 
   const chartType = 'scatter';
   const tabs = [
+    { label: 'Word Cloud', content: <WordCloud /> },
     { label: 'GraphQL', content: <YelpBusinessList location="San Diego" term="coffee"/> },
     { label: 'AWS Lambda', content: <GitHubSection /> },
-    { label: 'TypeScript', content: <PlayGroundSection /> },
-    { label: 'Word Cloud', content: <WordCloud /> },
+    { label: 'TypeScript', content: <PlayGroundSection /> },   
     { label: 'Chart', content: <StockComparisonChart symbols={symbols} chartType={chartType} /> },
   ];
 

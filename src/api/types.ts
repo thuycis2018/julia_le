@@ -34,6 +34,31 @@ export interface YelpResponse {
     };
 }
 
+// REPO
+export interface Repository {
+    name: string;
+    owner: {
+      login: string;
+    };
+    url: string;
+    description: string;
+    stargazerCount: number;
+    forkCount: number;
+  }
+  
+  export interface SearchResponse {
+    search: {
+      edges: {
+        node: Repository;
+      }[];
+    };
+  }
+  
+  export interface SearchProps {
+    query: string;
+    first: number;
+  }
+
 // OTHERS
 export interface Place {
     id: number;

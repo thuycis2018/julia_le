@@ -4,10 +4,11 @@ import Footer from '../components/Footer';
 
 export default function HomePage() {
   return (
-    <div>
-      <AboutSection />
-      <SkillSection />
-      <Footer />
-    </div>   
+    <div>     
+    <AboutSection />
+    <SkillSection />
+    <Footer />    
+    </div>
+ 
   );
 }
