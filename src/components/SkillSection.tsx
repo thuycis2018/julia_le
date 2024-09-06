@@ -6,7 +6,7 @@ export default function SkillSection() {
     return (
         <div className= "container mx-auto my-8 p-4 grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
-                <div className="bg-green-4 p-4">
+                <div className="bg-brown-1 p-4">
                 <h3 className="text-white text-lg font-bold"><FontAwesomeIcon icon={faCalendarDay} className="mr-5" />Web Project Managment</h3>
                 </div>
                 <div className="bg-white p-6">
@@ -14,7 +14,7 @@ export default function SkillSection() {
                 </div>
             </div>
             <div className="rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
-                <div className="bg-green-4 p-4">
+                <div className="bg-brown-1 p-4">
                 <h3 className="text-white text-lg font-bold"><FontAwesomeIcon icon={faCloud} className="mr-5" />Web Development</h3>
                 </div>
                 <div className="bg-white p-6">
@@ -22,7 +22,7 @@ export default function SkillSection() {
                 </div>
             </div>
             <div className="rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
-                <div className="bg-green-4 p-4">
+                <div className="bg-brown-1 p-4">
                 <h3 className="text-white text-lg font-bold"><FontAwesomeIcon icon={faCheck} className="mr-5" />System Integrations</h3>
                 </div>
                 <div className="bg-white p-6">
