@@ -2,31 +2,7 @@ import React from 'react';
 import { useQuery } from '@apollo/client';
 import client from '../apolloClient';
 import { SEARCH_REPOSITORIES } from '../api/queries/queries';
-
-// Define types for the response
-interface Repository {
-  name: string;
-  owner: {
-    login: string;
-  };
-  url: string;
-  description: string;
-  stargazerCount: number;
-  forkCount: number;
-}
-
-interface SearchResponse {
-  search: {
-    edges: {
-      node: Repository;
-    }[];
-  };
-}
-
-interface SearchProps {
-  query: string;
-  first: number;
-}
+import {SearchProps, SearchResponse} from '../api/types'
 
 const GitHubSearch: React.FC<SearchProps> = ({ query, first }) => {
   const { loading, error, data } = useQuery<SearchResponse>(SEARCH_REPOSITORIES, {
