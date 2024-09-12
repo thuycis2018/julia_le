@@ -34,6 +34,20 @@ export interface YelpResponse {
     };
 }
 
+// DATOCMS
+export interface Testimonial {
+  id: string;
+  name: string;
+  title: string;
+  content: string;
+  _status: string;
+  _firstPublishedAt: string;
+}
+
+export interface TestimonialList {
+      allTestimonials: Testimonial[];
+}
+
 // REPO
 export interface Repository {
     name: string;
@@ -44,20 +58,20 @@ export interface Repository {
     description: string;
     stargazerCount: number;
     forkCount: number;
-  }
-  
-  export interface SearchResponse {
-    search: {
-      edges: {
-        node: Repository;
-      }[];
-    };
-  }
-  
-  export interface SearchProps {
-    query: string;
-    first: number;
-  }
+}
+
+export interface SearchResponse {
+  search: {
+    edges: {
+      node: Repository;
+    }[];
+  };
+}
+
+export interface SearchProps {
+  query: string;
+  first: number;
+}
 
 // OTHERS
 export interface Place {

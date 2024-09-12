@@ -48,3 +48,16 @@ export const SEARCH_REPOSITORIES = gql`
     }
   }
 `;
+
+export const GET_TESTIMONIALS = gql`
+  query GetTestimonials {
+    allTestimonials (orderBy: [_firstPublishedAt_ASC]) {
+      id
+      name  
+      title
+      content
+      _status
+      _firstPublishedAt
+   }
+  }
+`;

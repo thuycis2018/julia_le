@@ -5,11 +5,10 @@ export default function AboutSection() {
 
     return (
         <div className="container mx-auto flex h-84 md:mb-20">
-            <div className="flex flex-col md:flex-row items-center bg-green-4 text-white text-xl font-bold">
+            <div className="flex flex-col md:flex-row items-center bg-green-5 text-white text-xl font-bold">
                 <div className="md:flex-1 m-10 md:mb-0">
                     <p>
-                    I am a Software Engineer based in San Diego, with experience in full-stack web development, eCommerce, and system integrations over {YEAR_WEB_DEV} years. I am known for pulling the right people together, staying focused, and getting things done. Have you been to meetings that people will talk about changes and wait for someone to make the changes happen? You can count on me to make them happen!  
-                    </p>
+                    As a Software Engineer based in San Diego, I bring over {YEAR_WEB_DEV} years of expertise in full-stack development, eCommerce, and system integration. I am passionate about collaboration and known for driving projects forward by uniting the right people and keeping a clear focus on results. Have you ever been in a meeting where changes are discussed but no one takes the initiative? That is where I step in—I ensure those changes get implemented and things get done.</p>
                 </div>
                 <div className="relative w-60 h-60 m-4">
                     <img
