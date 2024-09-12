@@ -21,7 +21,7 @@ const DatoTestimonials: React.FC<Props> = () => {
 
   return (
     <div className="p-5">
-      <div className="mb-5"><FontAwesomeIcon icon={faLaptopCode} className="mr-2" /> This page uses React frontend (TypeScript and Apollo Client) sending GraphQL query to AWS API Gateway triggering AWS Lambda (Python) to call DatoCMS GraphQL endpoint passing API Token and return search result. API Token can be stored in AWS Secret Manager and then use AWS SDK to pull it in Lambda function.</div>
+      <div className="mb-5"><FontAwesomeIcon icon={faLaptopCode} className="mr-2" /> This feature uses React frontend (TypeScript and Apollo Client) pulling data from DatoCMS using GraphQL query.</div>
   
       <ul className="space-y-4">
         {data?.allTestimonials.map((record, index) => (

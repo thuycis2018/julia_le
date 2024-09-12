@@ -1,10 +1,11 @@
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Root from "./pages/Root";
-import HomePage from "./pages/HomePage";
-import TestimonialPage from "./pages/TestimonialPage";
-import PlayGroundPage from "./pages/PlayGroundPage";
-import StyleLibraryPage from "./pages/StyleLibraryPage";
+import HomePage from "./pages/home";
+import TestimonialPage from "./pages/testimonials";
+import PlayGroundPage from "./pages/playground";
+import StyleLibraryPage from "./pages/style-library";
+import CaseStudyPage from "./pages/case-study";
 
 const router = createBrowserRouter([
   {
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
       {
         path: "/playgrounds",
         element: <PlayGroundPage />
+      },
+      {
+        path: "/case-studies",
+        element: <CaseStudyPage />
       },
       {
         path: "/styles",
