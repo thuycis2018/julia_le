@@ -34,7 +34,7 @@ const GitHubSection: React.FC = () => {
         />
         <button
           onClick={handleSearch}
-          className="px-4 py-2 bg-green-2 text-white rounded-lg shadow-md hover:bg-green-1"
+          className="px-4 py-2 bg-green-5 text-white rounded-lg shadow-md hover:bg-green-1"
         >
           Search
         </button>

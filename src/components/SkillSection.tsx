@@ -4,7 +4,7 @@ import { YEAR_AGILE, YEAR_WEB_DEV } from './constants';
 
 export default function SkillSection() {
     return (
-        <div className= "container mx-auto my-8 p-4 grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className= "container mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
                 <div className="bg-brown-1 p-4">
                 <h3 className="text-white text-lg font-bold"><FontAwesomeIcon icon={faCalendarDay} className="mr-5" />Web Project Managment</h3>

@@ -5,6 +5,7 @@ import { useQuery} from '@apollo/client';
 import client from '../apolloClient';
 import { GET_TESTIMONIALS } from '../api/queries/queries';
 import { TestimonialList } from '../api/types';
+import Skeleton from '../components/Skeleton';
 
 interface Props {}
 
@@ -16,7 +17,7 @@ const DatoTestimonials: React.FC<Props> = () => {
     client,
   });
 
-  if (loading) return <p>Loading...</p>;
+  if (loading) return <Skeleton />;
   if (error) return <p>Error: {error.message}</p>;
 
   return (
@@ -30,7 +31,7 @@ const DatoTestimonials: React.FC<Props> = () => {
             className="bg-white p-6 shadow-lg rounded-lg hover:shadow-2xl transition-shadow duration-300 border border-gray-200">
             <p><span dangerouslySetInnerHTML={{ __html: record.content }}></span></p>
             <div className="flex items-center mb-4">
-              <p className="text-xl font-bold mt-5"><FontAwesomeIcon icon={faThumbsUp} className="mr-2" /> {record.name} , {record.title}</p>
+              <p className="text-xl font-bold mt-5"><FontAwesomeIcon icon={faThumbsUp} className="mr-2 text-green-5" /> {record.name} , {record.title}</p>
             </div>            
           </div>
         ))}

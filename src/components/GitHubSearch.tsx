@@ -2,7 +2,8 @@ import React from 'react';
 import { useQuery } from '@apollo/client';
 import client from '../apolloClient';
 import { SEARCH_REPOSITORIES } from '../api/queries/queries';
-import {SearchProps, SearchResponse} from '../api/types'
+import {SearchProps, SearchResponse} from '../api/types';
+import Skeleton from '../components/Skeleton';
 
 const GitHubSearch: React.FC<SearchProps> = ({ query, first }) => {
   const { loading, error, data } = useQuery<SearchResponse>(SEARCH_REPOSITORIES, {
@@ -13,7 +14,7 @@ const GitHubSearch: React.FC<SearchProps> = ({ query, first }) => {
     client,
   });
 
-  if (loading) return <p>Loading...</p>;
+  if (loading && query) return <Skeleton />;
   if (error) return <p>Error: {error.message}</p>;
 
   return (

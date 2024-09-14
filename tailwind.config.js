@@ -16,6 +16,9 @@ export default {
         },
         brown: {
           1: '#403434'
+        },
+        blue:{
+          1: '#0276b1'
         }
       },
     },
