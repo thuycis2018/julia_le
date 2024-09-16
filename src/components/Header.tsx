@@ -15,7 +15,7 @@ export default function Header() {
     <div className="font-sans">
       <nav className="bg-brown-1 text-white p-4 shadow-md">
         <div className="container mx-auto flex justify-between items-center">
-          <a href="#" className="text-xl font-bold">
+          <a href="/" className="text-xl font-bold">
             Julia Le
           </a>
           <div className="md:hidden">
