@@ -11,7 +11,7 @@ const YelpBusinessList = React.lazy(() => import('../components/YelpBusinessList
 const StockComparisonChart = React.lazy(() => import('../components/stock/StockComparisonChart'));
 const GitHubSection = React.lazy(() => import('../components/GitHubSection'));
 const DatoTestimonials = React.lazy(() => import('../components/DatoTestimonials'));
-const WordCloud = React.lazy(() => import('../components/WordCloud'));
+//const WordCloud = React.lazy(() => import('../components/WordCloud'));
 
 const PlayGroundPage: React.FC = () => {
   const [activeTab, setActiveTab] = useState(0);
@@ -19,7 +19,7 @@ const PlayGroundPage: React.FC = () => {
   const chartType = 'scatter';
   const tabs = [
     { label: 'Web Stacks', content: <PlayGroundSection /> }, 
-    { label: 'Word Cloud', content: <div><Suspense fallback={<div>Loading ....</div>}><WordCloud /></Suspense></div> },
+    //{ label: 'Word Cloud', content: <div><Suspense fallback={<div>Loading ....</div>}><WordCloud /></Suspense></div> },
     { label: 'GitHub Search', content: <div><Suspense fallback={<Skeleton />}><GitHubSection /></Suspense></div> }, 
     { label: 'DatoCMS', content: <div><Suspense fallback={<Skeleton />}><DatoTestimonials /></Suspense></div> }, 
     { label: 'Yelp List', content: <div><Suspense fallback={<Skeleton />}><YelpBusinessList location="San Diego" term="whiskey"/></Suspense></div> },
