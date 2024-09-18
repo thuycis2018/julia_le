@@ -20,3 +20,16 @@ Run dev:
 ```sh
 npm run dev
 ```
+
+
+Build the Docker image
+```sh
+docker build -t my-vite-app .
+```
+
+
+Run the Docker container
+```sh
+docker run -p 3000:80 my-vite-app
+```
+
