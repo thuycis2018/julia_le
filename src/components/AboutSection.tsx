@@ -4,7 +4,7 @@ import image from '../assets/jl.jpg';
 export default function AboutSection() {
 
     return (
-        <div className="container mx-auto flex h-84 md:mb-20">
+        <div className="container mx-auto flex h-84 mb-5 md:mb-20">
             <div className="flex flex-col md:flex-row items-center bg-green-5 text-white text-xl font-bold rounded-b-xl">
                 <div className="md:flex-1 m-10 md:mb-0">
                     <p>

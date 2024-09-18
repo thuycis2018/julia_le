@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLaptopCode } from '@fortawesome/free-solid-svg-icons';
 
-export default function PlayGroundSection() {
+export default function PlaygroundSection() {
     return (
       <div>      
         <ul className="text-left">

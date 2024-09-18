@@ -21,6 +21,11 @@ Run dev:
 npm run dev
 ```
 
+Run test:
+```sh
+npx vitest
+```
+
 
 Build the Docker image
 ```sh
