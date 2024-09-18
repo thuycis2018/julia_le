@@ -1,10 +1,10 @@
 import { render, screen } from '@testing-library/react';
-import PlaygroundSection from '../PlaygroundSection';
+import PlaygroundList from '../PlaygroundList';
 import { describe, it, expect } from 'vitest';
 
 describe('PlayGroundSection component', () => {
   it('renders the PlayGroundSection with links and icons', () => {
-    render(<PlaygroundSection />);
+    render(<PlaygroundList />);
 
     // Check if the links are rendered with correct text and href
     const firstLink = screen.getByText('https://j-le.pages.dev/');

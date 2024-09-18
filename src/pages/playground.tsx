@@ -3,7 +3,7 @@ import type { StockSymbol } from '../api/types';
 import Footer from '../components/Footer';
 //import GitHubSection from '../components/GitHubSection';
 //import DatoTestimonials from '../components/DatoTestimonials';
-import PlaygroundSection from '../components/PlaygroundSection';
+import PlaygroundList from '../components/PlaygroundList';
 //import WordCloud from '../components/WordCloud';
 import Skeleton from '../components/Skeleton';
 
@@ -18,7 +18,7 @@ const PlayGroundPage: React.FC = () => {
   const symbols: StockSymbol[] = ['GOOG', 'AMZN']; 
   const chartType = 'scatter';
   const tabs = [
-    { label: 'Web Stacks', content: <PlaygroundSection /> }, 
+    { label: 'Web Stacks', content: <PlaygroundList /> }, 
     //{ label: 'Word Cloud', content: <div><Suspense fallback={<div>Loading ....</div>}><WordCloud /></Suspense></div> },
     { label: 'GitHub Search', content: <div><Suspense fallback={<Skeleton />}><GitHubSection /></Suspense></div> }, 
     { label: 'DatoCMS', content: <div><Suspense fallback={<Skeleton />}><DatoTestimonials /></Suspense></div> }, 
