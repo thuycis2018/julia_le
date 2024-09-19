@@ -1,41 +1,35 @@
-import '@testing-library/jest-dom'; 
 import { render, screen } from '@testing-library/react';
 import AboutSection from '../AboutSection';
 import { YEAR_WEB_DEV } from '../constants';
 
-describe('AboutSection Component', () => {
-  test('renders the correct text content', () => {
+describe('AboutSection', () => {
+  it('renders the About Me heading', () => {
     render(<AboutSection />);
+    
+    // Check if the heading "About Me" is rendered
+    const headingElement = screen.getByText(/About Me/i);
+    expect(headingElement).toBeInTheDocument();
+  });
 
-    // Check if the paragraph contains the expected text with YEAR_WEB_DEV.
-    const textElement = screen.getByText(
+  it('renders the article with correct content', () => {
+    render(<AboutSection />);
+    
+    // Check if the paragraph contains the expected text and year from constants
+    const paragraphElement = screen.getByText(
       new RegExp(`over ${YEAR_WEB_DEV} years of expertise in full-stack development`, 'i')
     );
-    expect(textElement).toBeInTheDocument();
+    expect(paragraphElement).toBeInTheDocument();
   });
 
-  test('renders the image with the correct alt text', () => {
+  it('applies correct class names to the elements', () => {
     render(<AboutSection />);
-
-    // Check if the image is present with the correct alt text.
-    const imageElement = screen.getByAltText('Julia Le');
-    expect(imageElement).toBeInTheDocument();
-    expect(imageElement).toHaveAttribute('src', expect.stringContaining('jl.jpg'));
-  });
-
-  test('has the correct classes and structure', () => {
-    const { container } = render(<AboutSection />);
-
-    // Check if the main div has the required Tailwind classes
-    const mainDiv = container.querySelector('.container');
-    expect(mainDiv).toHaveClass('mx-auto', 'flex', 'h-84', 'md:mb-20');
-
-    // Check if the image wrapper has the correct classes
-    const imageWrapper = container.querySelector('.relative.w-60.h-60.m-4');
-    expect(imageWrapper).toBeInTheDocument();
-
-    // Check if the inner div has the rounded-full and object-cover classes
-    const imgElement = container.querySelector('img');
-    expect(imgElement).toHaveClass('rounded-full', 'object-cover', 'shadow-lg');
+    
+    // Check if the h1 element has the correct classes
+    const headingElement = screen.getByText(/About Me/i);
+    expect(headingElement).toHaveClass('text-brown-1 text-4xl ml-4 col-span-1 flex justify-center items-center');
+    
+    // Check if the article element has the correct classes
+    const articleElement = screen.getByRole('article');
+    expect(articleElement).toHaveClass('my-8 mx-auto max-w-[1000px] col-span-1 md:col-span-3');
   });
 });

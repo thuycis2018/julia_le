@@ -12,7 +12,7 @@ export default function Header() {
   };
 
   return (
-    <div className="font-sans">
+    <div className="font-sans sticky top-0 z-[99]">
       <nav className="bg-brown-1 text-white p-4 shadow-md">
         <div className="container mx-auto flex justify-between items-center">
           <a href="/" className="text-xl font-bold">
@@ -27,7 +27,7 @@ export default function Header() {
             <NavLink 
               to="/" 
               className={({ isActive }) =>
-                `mt-4 md:mt-0 md:ml-10 ${isActive ? 'font-bold' : ''}`
+                `mt-4 md:mt-0 md:ml-10 p-2 ${isActive ? 'font-bold border border-white-100 rounded-lg' : ''}`
               }
             >
               <FontAwesomeIcon icon={faHouse} className="mr-2" /> Home
@@ -35,7 +35,7 @@ export default function Header() {
             <NavLink 
               to="/case-studies" 
               className={({ isActive }) =>
-                `mt-4 md:mt-0 md:ml-10 ${isActive ? 'font-bold' : ''}`
+                `mt-4 md:mt-0 md:ml-10 p-2 ${isActive ? 'font-bold  border border-white-100  rounded-lg' : ''}`
               }
             >
               <FontAwesomeIcon icon={faFolder} className="mr-2" /> Case Study
@@ -43,7 +43,7 @@ export default function Header() {
             <NavLink 
               to="/testimonials" 
               className={({ isActive }) =>
-                `mt-4 md:mt-0 md:ml-10 ${isActive ? 'font-bold' : ''}`
+                `mt-4 md:mt-0 md:ml-10 p-2 ${isActive ? 'font-bold  border border-white-100  rounded-lg' : ''}`
               }
             >
               <FontAwesomeIcon icon={faComments} className="mr-2" /> Testimonials
@@ -51,7 +51,7 @@ export default function Header() {
             <NavLink 
               to="/playgrounds" 
               className={({ isActive }) =>
-                `mt-4 md:mt-0 md:ml-10 ${isActive ? 'font-bold' : ''}`
+                `mt-4 md:mt-0 md:ml-10 p-2 ${isActive ? 'font-bold  border border-white-100  rounded-lg' : ''}`
               }
             >
               <FontAwesomeIcon icon={faCode} className="mr-2" /> Playground

@@ -12,7 +12,7 @@ const CaseStudy: React.FC = () => {
 
       <main className="max-w-7xl mx-auto py-10 px-6 lg:px-8">
         <section className="mb-10">
-          <h2 className="text-3xl font-semibold mb-4 text-green-5">Background</h2>
+          <h2 className="text-3xl font-semibold mb-4 text-black">Background</h2>
           <p className="mt-4">
             A mid-sized tech company providing internet sercurity solutions was facing several operational challenges in its web development processes. The company had a growing number of feature requests from different departments, each with its own set of priorities, leading to constant pressure on the development team. Without a structured prioritization process, teams often found themselves juggling conflicting demands, resulting in:
           </p>
@@ -30,7 +30,7 @@ const CaseStudy: React.FC = () => {
         </section>
 
         <section className="mb-10">
-          <h2 className="text-3xl font-semibold mb-4 text-green-5">Challenges</h2>
+          <h2 className="text-3xl font-semibold mb-4 text-black">Challenges</h2>
           <ul className="list-disc list-inside space-y-2 ml-5">
             <li>Long list of feature requests from different departments.</li>
             <li>Conflicting priorities across teams and stakeholders.</li>
@@ -38,22 +38,22 @@ const CaseStudy: React.FC = () => {
         </section>
 
         <section className="mb-10">
-          <h2 className="text-3xl font-semibold mb-6 text-green-5">Solution: Agile Adoption</h2>
+          <h2 className="text-3xl font-semibold mb-6 text-black">Solution: Agile Adoption</h2>
           <ul className="list-none space-y-6">
             <li>
-              <FontAwesomeIcon icon={faChalkboardTeacher} className="fa-fw text-orange-600 text-2xl mr-3" />
-              <span className="text-xl font-semibold p-2 text-green-5">Phase 1 - Training and Alignment:</span> 
+              <FontAwesomeIcon icon={faChalkboardTeacher} className="fa-fw text-brown-2 text-2xl mr-3" />
+              <span className="text-xl font-semibold p-2 text-black">Phase 1 - Training and Alignment:</span> 
               I started with Agile training, role redefinition, and a pilot project to gradually introduce Agile practices without overwhelming the team.
             </li>
             <li>
-              <FontAwesomeIcon icon={faProjectDiagram} className="fa-fw text-orange-600 text-2xl mr-3" />
-              <span className="text-xl font-semibold p-2 text-green-5">Phase 2 - Implementing Agile Processes:</span> 
+              <FontAwesomeIcon icon={faProjectDiagram} className="fa-fw text-brown-2 text-2xl mr-3" />
+              <span className="text-xl font-semibold p-2 text-black">Phase 2 - Implementing Agile Processes:</span> 
               Introduced 1-week sprints, daily standups, short sprint reviews, and retrospectives. Teams began collaborating 
               more closely and breaking down features into smaller tasks for iterative delivery.
             </li>
             <li>
-              <FontAwesomeIcon icon={faTools} className="fa-fw text-orange-600 text-2xl mr-3" />
-              <span className="text-xl font-semibold p-2 text-green-5">Phase 3 - Continuous Improvement: </span> 
+              <FontAwesomeIcon icon={faTools} className="fa-fw text-brown-2 text-2xl mr-3" />
+              <span className="text-xl font-semibold p-2 text-black">Phase 3 - Continuous Improvement: </span> 
               Implemented Kanban for bug fixes and maintenance, and cross-functional teams to enhance 
               productivity and quality.
             </li>
@@ -61,32 +61,32 @@ const CaseStudy: React.FC = () => {
         </section>
 
         <section className="mb-10">
-          <h2 className="text-3xl font-semibold mb-4 text-green-5">Results</h2>
+          <h2 className="text-3xl font-semibold mb-4 text-black">Results</h2>
 
           <ul className="list-none space-y-6">
             <li>
-              <FontAwesomeIcon icon={faTasks} className="fa-fw text-green-5 text-2xl mr-3" />
-              <span className="text-xl font-semibold p-2 text-green-5">Streamlined Prioritization Process:</span> 
+              <FontAwesomeIcon icon={faTasks} className="fa-fw text-brown-2 text-2xl mr-3" />
+              <span className="text-xl font-semibold p-2 text-black">Streamlined Prioritization Process:</span> 
               A clear framework for evaluating and prioritizing features was established, leading to better alignment between departments, reduction in bottlenecks, and faster decision-making.
             </li>
             <li>
-              <FontAwesomeIcon icon={faArrowsSpin} className="fa-fw text-green-5 text-2xl mr-3" />
-              <span className="text-xl font-semibold p-2 text-green-5">Increased Cross-Department Collaboration:</span> 
+              <FontAwesomeIcon icon={faArrowsSpin} className="fa-fw text-brown-2 text-2xl mr-3" />
+              <span className="text-xl font-semibold p-2 text-black">Increased Cross-Department Collaboration:</span> 
               Improved communication between departments reduced conflicts and enhanced collaboration through regular stakeholder meetings and clearer roles.
             </li>
             <li>
-              <FontAwesomeIcon icon={faClock} className="fa-fw text-green-5 text-2xl mr-3" />
-              <span className="text-xl font-semibold p-2 text-green-5">Faster Delivery and Reduced Overload:</span> 
+              <FontAwesomeIcon icon={faClock} className="fa-fw text-brown-2 text-2xl mr-3" />
+              <span className="text-xl font-semibold p-2 text-black">Faster Delivery and Reduced Overload:</span> 
               Agile practices enabled more frequent, incremental releases, reducing backlog overload and improving focus on high-priority tasks.
             </li>
             <li>
-              <FontAwesomeIcon icon={faFaceSmile} className="fa-fw text-green-5 text-2xl mr-3" />
-              <span className="text-xl font-semibold p-2 text-green-5">Improved Stakeholder Satisfaction:</span> 
+              <FontAwesomeIcon icon={faFaceSmile} className="fa-fw text-brown-2 text-2xl mr-3" />
+              <span className="text-xl font-semibold p-2 text-black">Improved Stakeholder Satisfaction:</span> 
               Enhanced transparency and realistic expectations led to increased stakeholder satisfaction and a more structured feedback loop.
             </li>
             <li>
-              <FontAwesomeIcon icon={faChartLine} className="fa-fw text-green-5 text-2xl mr-3" />
-              <span className="text-xl font-semibold p-2 text-green-5">Increased Focus on High-Impact Features:</span> 
+              <FontAwesomeIcon icon={faChartLine} className="fa-fw text-brown-2 text-2xl mr-3" />
+              <span className="text-xl font-semibold p-2 text-black">Increased Focus on High-Impact Features:</span> 
               Prioritization improvements allowed the team to deliver valuable features first and manage feature churn more effectively.
             </li>
           </ul>
