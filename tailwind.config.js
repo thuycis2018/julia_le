@@ -22,7 +22,19 @@ export default {
         blue:{
           1: '#0276b1',
           2: '#1b365d',
-        }
+        },
+        clipPath: {
+          'custom-comment-box': 'polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);',
+        },
+        keyframes: {
+          slideIn: {
+            '0%': { transform: 'translateX(100%)' },
+            '100%': { transform: 'translateX(0)' },
+          },
+        },
+        animation: {
+          slideIn: 'slideIn 1s ease-in-out forwards',
+        },
       },
     },
   },

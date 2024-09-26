@@ -7,7 +7,7 @@ import PlaygroundList from '../components/PlaygroundList';
 //import WordCloud from '../components/WordCloud';
 import Skeleton from '../components/Skeleton';
 
-const YelpBusinessList = React.lazy(() => import('../components/YelpBusinessList'));
+// const YelpBusinessList = React.lazy(() => import('../components/YelpBusinessList'));
 //const StockComparisonChart = React.lazy(() => import('../components/stock/StockComparisonChart'));
 const GitHubSection = React.lazy(() => import('../components/GitHubSection'));
 const DatoTestimonials = React.lazy(() => import('../components/DatoTestimonials'));
@@ -22,7 +22,7 @@ const PlayGroundPage: React.FC = () => {
     //{ label: 'Word Cloud', content: <div><Suspense fallback={<div>Loading ....</div>}><WordCloud /></Suspense></div> },
     { label: 'GitHub Search', content: <div><Suspense fallback={<Skeleton />}><GitHubSection /></Suspense></div> }, 
     { label: 'DatoCMS', content: <div><Suspense fallback={<Skeleton />}><DatoTestimonials /></Suspense></div> }, 
-    { label: 'Yelp List', content: <div><Suspense fallback={<Skeleton />}><YelpBusinessList location="San Diego" term="whiskey"/></Suspense></div> },
+  //  { label: 'Yelp List', content: <div><Suspense fallback={<Skeleton />}><YelpBusinessList location="San Diego" term="whiskey"/></Suspense></div> },
   //   { label: 'Chart', content: <div><Suspense fallback={<div>Loading ....</div>}><StockComparisonChart symbols={symbols} chartType={chartType} /> </Suspense></div>},
   ];
 

@@ -38,10 +38,6 @@ const Testimonials: React.FC = () => {
           >
             <p><FontAwesomeIcon icon={faThumbsUp} className="mr-2" /> {item.testimonial}</p>
             <div className="flex items-center mb-4">
-              <div
-                style={{ backgroundColor: getRandomWebFriendlyColor() }}
-                className="w-8 h-8 rounded-full mr-2 mt-5"
-              ></div>
               <p className="text-xl font-bold mt-5">{item.name}</p>
             </div>
             
@@ -53,13 +49,13 @@ const Testimonials: React.FC = () => {
 };
 
 // Function to generate a random web-friendly color
-const getRandomWebFriendlyColor = (): string => {
-  const colors = [
-    '#FF0000', '#00FF00', '#0000FF', '#FFFF00', '#00FFFF', '#FF00FF',
-    'purple', 'pink', 'blue', 'green', 'red', 'orange'
-  ];
-  const randomIndex = Math.floor(Math.random() * colors.length);
-  return colors[randomIndex];
-};
+// const getRandomWebFriendlyColor = (): string => {
+//   const colors = [
+//     '#FF0000', '#00FF00', '#0000FF', '#FFFF00', '#00FFFF', '#FF00FF',
+//     'purple', 'pink', 'blue', 'green', 'red', 'orange'
+//   ];
+//   const randomIndex = Math.floor(Math.random() * colors.length);
+//   return colors[randomIndex];
+// };
 
 export default Testimonials;
