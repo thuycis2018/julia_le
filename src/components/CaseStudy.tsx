@@ -48,14 +48,12 @@ const CaseStudy: React.FC = () => {
             <li>
               <FontAwesomeIcon icon={faProjectDiagram} className="fa-fw text-brown-2 text-2xl mr-3" />
               <span className="text-xl font-semibold p-2 text-black">Phase 2 - Implementing Agile Processes:</span> 
-              Introduced 1-week sprints, daily standups, short sprint reviews, and retrospectives. Teams began collaborating 
-              more closely and breaking down features into smaller tasks for iterative delivery.
+              Introduced 1-week sprints, daily standups, weekly sprint planning meetings and backlog refinement meetings, short sprint reviews, and retrospectives. Teams began collaborating more closely and breaking down features into smaller tasks for iterative delivery.
             </li>
             <li>
               <FontAwesomeIcon icon={faTools} className="fa-fw text-brown-2 text-2xl mr-3" />
               <span className="text-xl font-semibold p-2 text-black">Phase 3 - Continuous Improvement: </span> 
-              Implemented Kanban for bug fixes and maintenance, and cross-functional teams to enhance 
-              productivity and quality.
+              Implemented sprint board for bug fixes and maintenance, and cross-functional team meetings to enhance productivity and quality.
             </li>
           </ul>
         </section>

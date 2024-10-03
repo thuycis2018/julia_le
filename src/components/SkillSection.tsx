@@ -10,7 +10,7 @@ export default function SkillSection() {
                 <h3 className="text-white text-lg font-bold"><FontAwesomeIcon icon={faCalendarDay} className="mr-5" />Web Project Managment</h3>
                 </div>
                 <div className="bg-white p-6">
-                <p>With over {YEAR_AGILE} of experience in Agile methodology, I excel at facilitating collaboration between web developers, designers, and UI/UX experts to drive web optimization and customization efforts.</p>
+                <p>With over {YEAR_AGILE} years of experience in Agile methodology, I excel at facilitating collaboration between web developers, designers, and UI/UX experts to drive web optimization and customization efforts.</p>
                 </div>
             </div>
             <div className="rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
