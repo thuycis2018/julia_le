@@ -6,6 +6,7 @@ import TestimonialPage from "./pages/testimonials";
 import PlayGroundPage from "./pages/playground";
 import StyleLibraryPage from "./pages/style-library";
 import CaseStudyPage from "./pages/case-study";
+import LPFurniture from "./pages/lp-furniture";
 
 const router = createBrowserRouter([
   {
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
       {
         path: "/styles",
         element: <StyleLibraryPage />
+      },
+      {
+        path: "/lp-furniture",
+        element: <LPFurniture />
       }
     ]
   }
