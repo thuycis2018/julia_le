@@ -49,12 +49,12 @@ export default function Header() {
               <FontAwesomeIcon icon={faComments} className="mr-2" /> Testimonials
             </NavLink>
             <NavLink 
-              to="/playgrounds" 
+              to="/portfolio" 
               className={({ isActive }) =>
                 `mt-4 md:mt-0 md:ml-10 p-2 ${isActive ? 'font-bold  border border-white-100  rounded-lg' : ''}`
               }
             >
-              <FontAwesomeIcon icon={faCode} className="mr-2" /> Playground
+              <FontAwesomeIcon icon={faCode} className="mr-2" /> Portfolio
             </NavLink>
           </div>
         </div>

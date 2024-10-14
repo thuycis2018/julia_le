@@ -22,7 +22,7 @@ const router = createBrowserRouter([
         element: <TestimonialPage />
       },
       {
-        path: "/playgrounds",
+        path: "/portfolio",
         element: <PlayGroundPage />
       },
       {

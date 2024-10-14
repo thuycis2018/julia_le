@@ -18,7 +18,7 @@ const PlayGroundPage: React.FC = () => {
   // const symbols: StockSymbol[] = ['GOOG', 'AMZN']; 
   // const chartType = 'scatter';
   const tabs = [
-    { label: 'Web Stacks', content: <PlaygroundList /> }, 
+    { label: 'Web Sites', content: <PlaygroundList /> }, 
     //{ label: 'Word Cloud', content: <div><Suspense fallback={<div>Loading ....</div>}><WordCloud /></Suspense></div> },
     { label: 'GitHub Search', content: <div><Suspense fallback={<Skeleton />}><GitHubSection /></Suspense></div> }, 
     { label: 'DatoCMS', content: <div><Suspense fallback={<Skeleton />}><DatoTestimonials /></Suspense></div> }, 
