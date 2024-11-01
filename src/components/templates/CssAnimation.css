@@ -1,122 +1,118 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap");
 
 .lp-main {
-    width: 100%;
-    height: 95vh;
-    font-family: 'Roboto', sans-serif;
-    background-image: url('/images/sofa.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  width: 100%;
+  height: 95vh;
+  font-family: "Roboto", sans-serif;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .lp-main .lp-section {
-    position: fixed;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 10%;
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10%;
 }
 
 .lp-section .lp-h1 {
-    font-size: 7rem;
-    color: #fff;
-    font-weight: 800;
-    letter-spacing: 0.7rem;
+  font-size: 7rem;
+  color: #fff;
+  font-weight: 800;
+  letter-spacing: 0.7rem;
 }
 
 .lp-section .lp-h1 .lp-span {
-    opacity: 0;
-    animation: fadeHeading 1s ease-in forwards;
+  opacity: 0;
+  animation: fadeHeading 1s ease-in forwards;
 }
 
 .lp-section .lp-h1 .lp-span:nth-of-type(1) {
-    animation-delay: 1s;
+  animation-delay: 1s;
 }
 
 .lp-section .lp-h1 .lp-span:nth-of-type(2) {
-    animation-delay: 1.5s;
+  animation-delay: 1.5s;
 }
 
 .lp-section .lp-h1 .lp-span:nth-of-type(3) {
-    animation-delay: 2s;
+  animation-delay: 2s;
 }
 
 @keyframes fadeHeading {
-    to {
-        opacity: 1;
-    }
+  to {
+    opacity: 1;
+  }
 }
 
 .lp-section .lp-p {
-    color: #fff;
-    font-weight: 300;
-    font-size: 1.74rem;
-    word-spacing: .3rem;
-    letter-spacing: .3rem;
-    opacity: 0;
-    transform: translateX(4rem);
-    animation: subheadingSlide 4s ease-out 2.5s forwards;
+  color: #fff;
+  font-weight: 300;
+  font-size: 1.74rem;
+  word-spacing: 0.3rem;
+  letter-spacing: 0.3rem;
+  opacity: 0;
+  transform: translateX(4rem);
+  animation: subheadingSlide 4s ease-out 2.5s forwards;
 }
 
 @keyframes subheadingSlide {
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .lp-button {
-    outline: none;
-    border: 1px solid #fff;
-    margin-top: 2.5rem;
-    padding: 1.2rem 1.5rem;
-    border-radius: 1rem;
-    background-color: transparent;
-    font-size: 1.1rem;
-    color: #fff;
-    font-weight: 900;
-    letter-spacing: .3rem;
-    word-spacing: .3rem;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    transition: all 0.2s ease;
-    opacity: 0;
-    transform: translateY(4rem);
-    animation: buttonSlide 1s ease-out 4s forwards;
+  outline: none;
+  border: 1px solid #fff;
+  margin-top: 2.5rem;
+  padding: 1.2rem 1.5rem;
+  border-radius: 1rem;
+  background-color: transparent;
+  font-size: 1.1rem;
+  color: #fff;
+  font-weight: 900;
+  letter-spacing: 0.3rem;
+  word-spacing: 0.3rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: all 0.2s ease;
+  opacity: 0;
+  transform: translateY(4rem);
+  animation: buttonSlide 1s ease-out 4s forwards;
 }
 
 .lp-button:hover {
-    background-color: #fff;
-    color: #000;
-    box-shadow: 5px 5px 2px 1px rgba(0, 0, 54, 0.2);
+  background-color: #fff;
+  color: #000;
+  box-shadow: 5px 5px 2px 1px rgba(0, 0, 54, 0.2);
 }
 
 @keyframes buttonSlide {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
-
 
 @media (max-width: 992px) {
-    .lp-main {
-        background-image: url('/images/sofa-sm.jpg');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        overflow:hidden;
-    }
+  .lp-main {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+  }
 
-    .lp-main .lp-section {
-        left: 5%;
-    }
+  .lp-main .lp-section {
+    left: 5%;
+  }
 
-    .lp-section .lp-h1 {
-        line-height: 5rem;
-        margin-bottom: .5rem;
-        font-size: 2.2rem;
-    }
+  .lp-section .lp-h1 {
+    line-height: 5rem;
+    margin-bottom: 0.5rem;
+    font-size: 2.2rem;
+  }
 }
-
