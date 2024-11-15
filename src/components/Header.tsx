@@ -1,10 +1,15 @@
-import { useState } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHouse, faComments, faCode, faBars, faFolder } from '@fortawesome/free-solid-svg-icons';
-import { NavLink } from 'react-router-dom';
+import { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faHouse,
+  faComments,
+  faCode,
+  faBars,
+  faFolder,
+} from "@fortawesome/free-solid-svg-icons";
+import { NavLink } from "react-router-dom";
 
 export default function Header() {
-
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -12,49 +17,59 @@ export default function Header() {
   };
 
   return (
-    <div className="font-sans sticky top-0 z-[99]">
-      <nav className="bg-brown-1 text-white p-4 shadow-md">
-        <div className="container mx-auto flex justify-between items-center">
-          <a href="/" className="text-xl font-bold">
-            Julia Le
+    <div className='font-sans sticky top-0 z-[99]'>
+      <nav className='bg-brown-1 text-white p-4 shadow-md'>
+        <div className='container mx-auto flex justify-between items-center'>
+          <a href='/' className='text-xl font-bold'>
+            Thuy Le
           </a>
-          <div className="md:hidden">
-            <button onClick={toggleMenu} className="text-white focus:outline-none">
-              <FontAwesomeIcon icon={faBars} size="lg" />
+          <div className='md:hidden'>
+            <button
+              onClick={toggleMenu}
+              className='text-white focus:outline-none'
+            >
+              <FontAwesomeIcon icon={faBars} size='lg' />
             </button>
           </div>
-          <div className={`flex-col md:flex md:flex-row md:items-center ${isOpen ? 'flex' : 'hidden'}`}>
-            <NavLink 
-              to="/" 
+          <div
+            className={`flex-col md:flex md:flex-row md:items-center ${
+              isOpen ? "flex" : "hidden"
+            }`}
+          >
+            <NavLink
+              to='/'
               className={({ isActive }) =>
-                `mt-4 md:mt-0 md:ml-10 p-2 ${isActive ? 'font-bold border border-white-100 rounded-lg' : ''}`
+                `mt-4 md:mt-0 md:ml-10 p-2 ${
+                  isActive ? "font-bold border border-white-100 rounded-lg" : ""
+                }`
               }
             >
-              <FontAwesomeIcon icon={faHouse} className="mr-2" /> Home
+              <FontAwesomeIcon icon={faHouse} className='mr-2' /> Home
             </NavLink>
-            <NavLink 
-              to="/case-studies" 
+            <NavLink
+              to='/testimonials'
               className={({ isActive }) =>
-                `mt-4 md:mt-0 md:ml-10 p-2 ${isActive ? 'font-bold  border border-white-100  rounded-lg' : ''}`
+                `mt-4 md:mt-0 md:ml-10 p-2 ${
+                  isActive
+                    ? "font-bold  border border-white-100  rounded-lg"
+                    : ""
+                }`
               }
             >
-              <FontAwesomeIcon icon={faFolder} className="mr-2" /> Case Study
+              <FontAwesomeIcon icon={faComments} className='mr-2' />{" "}
+              Testimonials
             </NavLink>
-            <NavLink 
-              to="/testimonials" 
+            <NavLink
+              to='/portfolio'
               className={({ isActive }) =>
-                `mt-4 md:mt-0 md:ml-10 p-2 ${isActive ? 'font-bold  border border-white-100  rounded-lg' : ''}`
+                `mt-4 md:mt-0 md:ml-10 p-2 ${
+                  isActive
+                    ? "font-bold  border border-white-100  rounded-lg"
+                    : ""
+                }`
               }
             >
-              <FontAwesomeIcon icon={faComments} className="mr-2" /> Testimonials
-            </NavLink>
-            <NavLink 
-              to="/portfolio" 
-              className={({ isActive }) =>
-                `mt-4 md:mt-0 md:ml-10 p-2 ${isActive ? 'font-bold  border border-white-100  rounded-lg' : ''}`
-              }
-            >
-              <FontAwesomeIcon icon={faCode} className="mr-2" /> Portfolio
+              <FontAwesomeIcon icon={faCode} className='mr-2' /> Portfolio
             </NavLink>
           </div>
         </div>
